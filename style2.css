@@ -1,0 +1,382 @@
+
+  @font-face {
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fredoka One'), local('FredokaOne-Regular'), url(fuentes/fredoka.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(fuentes/opensans.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Pontano Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pontano Sans'), local('PontanoSans-Regular'), url(fuentes/pontano.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+body {
+    background-color:whitesmoke;
+    margin:0;
+}
+#home {
+    background-image: url(img/necochea.jpg);
+    width: 100vw;
+    height: 72vh;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+    padding-top: 25vh;
+}
+#imgportada {
+    flex: initial;
+    align-self: center;
+}
+
+#imgportada img {
+    height: 300px;
+    width: 300px;
+    /*float: left;*/
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 48pt;
+    font-family: 'Fredoka One';
+    font-weight: 200;
+    color: whitesmoke;
+    text-align: center;
+    margin: 0px;
+    text-shadow: -3px -3px rgba(0, 0, 0, 0.6);*/
+    
+}
+
+h2 {
+font-size: 20pt;
+font-family:'Fredoka One';
+font-weight: 100;
+color: rgb(11, 158, 114);
+text-align: left;
+min-width: 300px;
+
+}
+
+section {
+    width:  98vw;
+    background-color: rgb(68, 61, 61);
+    display: inline-block;
+    padding: 0 1vw 25px;
+    box-sizing: content-box;
+}
+
+
+
+h3 {
+    font-size: 22pt;
+    font-family:'Open Sans';
+    font-weight: 100;
+    color: rgba(245, 245, 245, .8);
+    text-align: center;
+    padding: 0 25vw;
+}
+
+h3 span {
+    color: whitesmoke;
+}
+
+
+p {
+    font-size: 16pt;
+    font-family:'Open Sans';
+    color:white;
+    text-align: left;
+    margin: 0px;
+   
+}
+ 
+hr {
+    width: 60%;
+    margin: 18px auto 24px auto;
+    border-color: #2F2D2E;
+    border-color: rgba(150, 150, 150, .5);
+}
+p.infoContacto {
+    font-family:'Open Sans';
+    font-size: 16pt; 
+    text-align: left;
+
+}
+
+section .contenedor {
+    display: flex;
+}
+
+.contenedor .titulo {
+    flex: initial;
+}
+.contenedor .contenido {
+    flex: 1;
+}
+
+
+
+ul.estudios {
+    list-style: none;
+    flex: 1 0 auto;
+    padding: 0;
+}
+
+.estudios li {
+font-family: 'Open Sans';
+font-size: 16pt;
+color: black;
+
+}
+
+
+#navigation {
+    height: 50px;
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    background: black;
+}
+
+.redes {
+    margin:  0 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.redes i{
+    color:whitesmoke;
+}
+
+
+
+ul.nav-items li {
+    display: inline;
+    font-family:'Fredoka One';
+    font-size: 18pt;
+    color: gray;
+}
+
+ul.nav-items a {
+    color: gray;
+    text-decoration: none;
+}
+
+ul.nav-items a:visited {
+    color: gray;
+}
+#presentacion{
+   background: rgb(73, 70, 70);
+   flex: 1;
+   padding-left: 1em;
+   
+}
+#presentacion .contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#educacion {
+    background: whitesmoke;
+}
+#habilidades{
+   background: whitesmoke;
+}
+#trabajos{
+    background: whitesmoke;
+}
+#contacto{
+    background: rgb(73, 70, 70);
+}
+
+div.habilidades {
+    margin: 0px 50px;
+}
+div.habilidades div {
+    width: 70%;
+    
+}
+   
+div.habilidades div div.barra {
+
+    color: ghostwhite;
+    background-color: grey;
+    
+}
+div.barra div {
+    background-color: rgb(11, 158, 114);
+}
+
+
+#office div.barra div {
+    width: 30%;
+}
+
+#corel div.barra div {
+    width: 85%;
+}
+
+
+#mysql div.barra div {
+    width: 50%;
+}
+
+#java div.barra div {
+    width: 50%;
+}
+div.idiomas, div.habilidades {
+    font-family: 'Open Sans';
+    font-size: 22pt;
+    color: black;
+} 
+
+div.idiomas {
+    margin: 0px 50px;
+}
+div.idiomas div {
+    width: 70%;
+}
+   
+div.idiomas div div.barra {
+    background-color: grey;
+    color: ghostwhite;
+}
+
+#ingles div.barra div {
+    width: 30%;
+}
+
+#italiano div.barra div {
+    width: 85%;
+}
+form{
+    width: 50%;
+    margin: auto;
+}
+
+li{
+    padding: 1%;
+}
+
+.lista_contacto{
+    padding: 0;
+    list-style: none;
+}
+
+.lista_contacto li div{
+    width: 30%;
+    font-family: 'Open Sans';
+    color: rgb(11, 158, 114);
+}
+
+.nombre input{
+    width: 30%;
+    height:5% ;
+}
+.apellido input{
+    width: 30%;
+    height:5% ;
+}
+
+.email input{
+    width: 60%;
+    height:5% ;
+
+}
+
+.mensaje input{
+    width: 60%;
+    height: 30%;
+}
+
+.submit{
+    margin-left: 30%;
+}
+.flex-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60vw;
+    margin: 0 auto;
+}
+.flex-container div.flex
+{
+    flex: auto;
+    width: 100px;
+    margin: 0;
+}
+.flex-container div.flex img
+{ 
+    width: 50%; 
+    height: auto;
+    border: 1px solid #000;
+    margin: 5%;
+}
+
+#enviar {
+    padding: 6px;
+    border: none;
+    background-color:  rgb(11, 158, 114);
+    font-size: 18pt;
+}
+
+p.infoContacto i.fas + span {
+    margin-left: 5px;
+}
+
+@media (min-width: 680px) {
+    .flex-container div.flex img {
+        width: 100%;
+    }
+    .flex-container div.flex {
+        flex-basis: 30%;
+    }
+}
+#pie{
+    background: black;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+}
+footer .redes {
+    margin-bottom: 30px;
+}
+footer .copyright {
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+}
+
+footer .copyright li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
